@@ -2,18 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Order your favorite smoothie with customizable options!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smoothie Site</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Smoothie Site Assignment 2</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Linking CSS file for styling-->
 </head>
 <body>
     <h1>Smoothie Order Form</h1>
-    <p>Customize your order below!</p>
     <form id="smoothieorder">
         <label for="name">Customer Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="size">Smoothie Size:</label>
+        <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    <!--Fieldset for fruit including legend to organize options-->
+        <fieldset>
+            <legend>Fruits:</legend>
+            <label><input type = "checkbox" name ="fruit" value ="Banana"/>Banana</label>
+            <label><input type = "checkbox" name ="fruit" value ="Strawberry"/>Strawberry</label>
+            <label><input type = "checkbox" name ="fruit" value ="Mango"/>Mango</label>
+            <label><input type = "checkbox" name ="fruit" value ="Blueberry"/>Blueberry</label>
+            <label><input type = "checkbox" name ="fruit" value ="Pineapple"/>Pineapple</label>
+            <label><input type = "checkbox" name ="fruit" vale = "Peach"/>Peach</label>
+            <label><input type = "checkbox" name ="fruit" value ="Raspberry"/>Raspberry</label>
+            <label><input type = "checkbox" name ="fruit" value ="Apple"/>Apple</label>
+            </label>
+            
+        </fieldset>
+        <!--Using legend and field set to group options together-->
+        <fieldset>
+            <legend>Extras: Add some an energy boost or protein!</legend>
+            <label><input type="checkbox" name="booster" value="Protein Powder"/>Protein Powder</label>
+            <label><input type="checkbox" name="booster" value="Energy Boost"/>Energy Boost</label>
+        </fieldset>
+        <fieldset>
+            <legend>Liquid Base:</legend>
+            <label><input type = "checkbox" name ="base" value ="Almond Milk"/>Almond Milk</label>
+            <label><input type = "checkbox" name ="base" value ="Yogurt"/>Vanilla Yogurt</label>
+            <label><input type = "checkbox" name ="base" value ="Greek Yogurt"/>Greek Yogurt</label>
+        </fieldset>
+
+        <button type="submit">Submit Order</button>
     </form>
+    <div id="orderOutput"></div>
+    <script src="js/scripter.js"></script>
 </body>
 
 <!-- Build a simple HTML form that you think would be appropriate for a customer to order a smoothie.
