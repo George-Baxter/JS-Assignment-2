@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e4f2fe; /* Blue background color */
+    background-color: #eafaf1; /* Light green background color */
     margin: 0;
     padding: 0;
 }
@@ -22,10 +22,19 @@ form {
 
 }
 
-/* Input fields */
-input[type="base"],
-input[type="booster"],
-input[type="fruit"],
+/*** Styling input fields
+    * Added accent color for checkboxess and radio buttons
+    * Increased size for visibility
+    * Added padding and margin for better spacing
+*/
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #4caf50; 
+    transform: scale(1.5); 
+    cursor: pointer;
+    padding: 10px;
+}
 textarea,
 select {
     width: 100%;
@@ -35,7 +44,12 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-/* adding some minor styling for button */
+/** Styling for text inputs
+    * Padding for better usability
+    * Margin for spacing
+    * Pointer cursor when hovering 
+    * Font size for readability
+*/
 button[type="submit"] {
     background-color: #4caf50; 
     color: white;
@@ -60,4 +74,39 @@ h1 {
     text-align: center;
     color: #333;
     margin-top: 20px;
+}
+
+/* Styling for the receipt output section
+    * Centered on the page
+    * White background
+    * Rounded corners
+    * Green border
+*/
+#orderOutput {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#orderOutput h2 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+#orderOutput p {
+    margin: 8px 0;
+}
+
+#orderOutput hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
 }

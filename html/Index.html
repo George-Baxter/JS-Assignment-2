@@ -12,7 +12,7 @@
     <h1>Smoothie Order Form</h1>
     <form id="smoothieorder">
         <label for="name">Customer Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required> <!-- Input field for customer name with required validation-->
         <label for="size">Smoothie Size:</label>
         <select id="size" name="size">
             <option value="small">Small</option>
@@ -27,10 +27,9 @@
             <label><input type = "checkbox" name ="fruit" value ="Mango"/>Mango</label>
             <label><input type = "checkbox" name ="fruit" value ="Blueberry"/>Blueberry</label>
             <label><input type = "checkbox" name ="fruit" value ="Pineapple"/>Pineapple</label>
-            <label><input type = "checkbox" name ="fruit" vale = "Peach"/>Peach</label>
+            <label><input type = "checkbox" name ="fruit" value ="Peach"/>Peach</label>
             <label><input type = "checkbox" name ="fruit" value ="Raspberry"/>Raspberry</label>
             <label><input type = "checkbox" name ="fruit" value ="Apple"/>Apple</label>
-            </label>
             
         </fieldset>
         <!--Using legend and field set to group options together-->
@@ -41,9 +40,9 @@
         </fieldset>
         <fieldset>
             <legend>Liquid Base:</legend>
-            <label><input type = "checkbox" name ="base" value ="Almond Milk"/>Almond Milk</label>
-            <label><input type = "checkbox" name ="base" value ="Yogurt"/>Vanilla Yogurt</label>
-            <label><input type = "checkbox" name ="base" value ="Greek Yogurt"/>Greek Yogurt</label>
+            <label><input type="radio" name="base" value="Almond Milk" /> Almond Milk</label>
+            <label><input type="radio" name="base" value="Yogurt" /> Vanilla Yogurt</label>
+            <label><input type="radio" name="base" value="Greek Yogurt" /> Greek Yogurt</label>
         </fieldset>
 
         <button type="submit">Submit Order</button>
@@ -51,14 +50,4 @@
     <div id="orderOutput"></div>
     <script src="js/scripter.js"></script>
 </body>
-
-<!-- Build a simple HTML form that you think would be appropriate for a customer to order a smoothie.
-Be creative, but practical – what different options might you want your customers to have?
-Create a local and remote code repository.
-Create a class for a smoothie object that follows best practices as demonstrated in class.
-Visually output a description of the customer’s smoothie to the HTML page.
-Be sure to periodically stage, comment and commit your code to the repository as you are developing your solution.
-Once you’ve completed the functionality of the interface, add some CSS to make the page visually attractive.
-Ensure that all your HTML, CSS, and JS is well-commented, formatted, and organized.
-Upload your application to a Web server and make sure that the application is functional.
-Have fun.-->
+</html>
